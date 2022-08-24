@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      body{
+      background-image: url(images/bg-main-desktop.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+       Font-size: 18px;
+      font-weight: 500;
+        display: flex;
+        position: relative;
+    }
+      .card1{background-image: url(images/bg-card-front.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+      border-radius: 10px;
+       text-align: center;width: 420px;height: 220px;margin: 200px auto 30px 200px;}
+        .icon{
+          margin-top: 15px;
+          margin-right: 300px;
+        }
+      .numberOnCard{   display: block;
+    width: 100%;
+    word-spacing: 4px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 10px;
+    margin: 20px 50px auto auto;}
+    .nameOnCard{
+      display:block;
+      width: auto;
+    word-spacing: 4px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    padding: auto 90px auto 10px;
+    margin: auto 150px auto auto;
+      
+    }
+    .expYY,.expMM{
+
+      display:block;
+      width: auto;
+    word-spacing: 4px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    padding: auto 90px auto 10px;
+    margin: auto auto auto 200px;
+    }
+    .card2{background-image: url(images/bg-card-back.png);
+      background-repeat: no-repeat;
+      
+      border-radius: 25px;
+      width: 500px;height: 150px;margin-left:  300px;
+      padding-top: 110px;
+      }
+      
+.cvcOncard{
+  margin: auto auto auto 350px;
+  font-size: 20px;
+}
+.form{
+  text-align: left;
+  margin: 200px auto auto 50px;
+  font-size: 18px;
+}
+.expiry{
+  border-color: lightgrey;
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.c{
+  border-color:lightgrey;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 110px;
+}
+
+.n{
+  border-color: lightgrey;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.confirm{
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  background-image: url(images/bg-main-desktop.png);
+  color: #fff;
+  font-size: large;
+  margin-top:20px ;
+}
+.thankyou-hidden{
+position: relative;
+text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <section>
+<div class="card1">
+<img class="icon" src="images/card-logo.svg">
+<span class="numberOnCard" id="numberoncard"> 0000 0000 0000 0000</span><br>
+<span class="nameOnCard" id="nameoncard">Jane Appleseed</span>
+<span class="expMM" id="dateoncard"></span>
+<span class="expYY" id="dateoncard">0000</span>
+</div>
+<div class="card2"> 
+  <span class="cvcOncard">000</span> 
+</div>
+</section>
+
+<section class="form">
+<div  id="myform">
+<label>Cardholder Name</label><br>
+ <input class="n" type="text"required placeholder="e.g. Jane Appleseed" name="cardholder-name" id="cardholder-name" oninput="inputName()"> 
+<br>
+ <label>Card Number</label><br>
+ <input class="n" type="text"required placeholder="9999 9999 9999 9999" name="cardNumber" id="cardNumber" oninput="inputCardNum()">
+<br> 
+<div class="ex">
+ <label style="margin-right: 80px;">Exp. Date (MM/YY)  
+</label><label>  CVC</label><br>
+ <input class="expiry" type="number" required placeholder="MM" name="month" id="month"oninput="inputMM()">
+ <input class="expiry" type="number"required placeholder="YY" name="yeaer" id="year"oninput="inputYY()">
+ <input class="c" type="number"required placeholder="e.g. 123" name="cvc" id="cvc" oninput="inputCvc()">
+ <p id="date-error"></p>
+</div>
+<button class="confirm"  id="Confirm" name="Confirm">  Confirm
+</button>
+</div>
+<div id="thankyou" hidden class="thankyou-hidden">
+  <img src="images/icon-complete.svg" alt="">
+  
+  <h1>Thank you!</h1>
+  <h2 id="thank-you-holder"></h2>
+  <p style="color:silver; font-size: large;">We've added your card details</p>
+  <button class="confirm" id="continue">Continue  </button>
+</div> 
+</section>
+<script src="script.js"></script>
+</body>
+</html>
