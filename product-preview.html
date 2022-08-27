@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color:antiquewhite;
+    }
+  .mydiv {
+     background-color: white;   border-radius: 30px ;width: 610px;  height: 500px;   text-align: left;
+      margin:200px auto auto auto; }
+  .title{
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .image{
+    display: grid;
+    mask-repeat: no-repeat;
+    width: 300px; height: 500px;
+    float: left;
+    margin-right: 40px;
+  border-radius: 10px;
+  }
+  .talk{font-size: 20px; color: darkgrey;margin-right: 10px;}
+.span1{
+  font-size: 40px;
+  color:darkgreen;
+  font-weight: bold;
+  margin :auto 15px 20px auto;
+}
+.span2{
+  font-size: 20px;
+  font-weight: bold;
+}
+button{
+  width: 250px;height: 50px;
+  margin-top: 10px ;
+ color: white;
+  background-color:green;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+button:hover{
+  background-color:darkgreen;
+
+}
+  </style>
+</head>
+<body>
+<div class="mydiv">
+  
+  <img class="image" src="images/image-product-desktop.jpg">
+  <p class="talk" style="padding-top:20px;"> P E R F U M E</p>
+  <p class="title">Gabrielle Essence Eau De Parfum</p>
+  
+  <p class="talk">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+    Perfumer-Creator for the House of CHANEL.</p>
+    
+    <span class="span1">$149.99</span>
+    <span class="span2"><s>$169.99</s></span>
+    <br>
+    <button><img src="images/icon-cart.svg" style="margin-right:10px;">Add to Cart</button> 
+  
+  </div>
+
+</body>
+</html>
