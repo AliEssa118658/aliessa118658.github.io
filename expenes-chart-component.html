@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      body {
+        text-align: center;
+        background-color:#F9D9F0;
+  }
+.div1{
+  margin: auto;
+  margin-top: 120px;
+ width: 500px; height: 100px;
+ background: linear-gradient(#ff5b66,#ff8c38); 
+ text-align:left;
+ border-radius: 20px;
+ padding-top: 10px;
+ padding-left: 20px;
+
+}
+.div2{
+  margin: auto;
+  margin-top: 10px;
+ width: 500px; height: auto;
+ background-color: white; 
+ text-align:left;
+ border-radius: 20px;
+ padding-top: 10px;
+ padding-left: 20px;
+}
+.p1{
+  color: white;
+  font-size: 30px;
+  margin: 10px auto 10px auto;
+}
+.options {
+    position: relative;
+    left: 50px;
+    background: var(--background1);
+    width: 350px;
+    color: var(--text);
+    border-top: 2px solid var(--text);
+    display: flex;
+    justify-content: space-between;
+}
+
+.option::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 27px;
+    background: 
+    linear-gradient(#ff5b66,#ff8c38);
+    width: 45px;
+}
+.option:nth-child(1)::after{
+  border-radius: 10px;
+    height: calc((363px / 100) *  10);
+}
+.option:nth-child(2)::after{
+    height: calc((363px / 100) * 20);
+    border-radius: 10px;
+
+}
+.option:nth-child(3)::after{
+  border-radius: 10px;
+  height: calc((363px / 100) * 50);
+}
+.option:nth-child(4)::after{
+  border-radius: 10px;
+  height: calc((363px / 100) * 31);
+}
+
+.option:nth-child(5)::after{
+  border-radius: 10px;
+  height: calc((363px / 100) * 20);
+}
+
+.option:nth-child(6)::after{
+  border-radius: 10px;  
+  height: calc((363px / 100) * 10);
+}
+.option:nth-child(7)::after{
+  border-radius: 10px; 
+  height: calc((363px / 100) * 20);
+}
+
+h1{
+  margin:auto auto 250px auto ;
+}
+  </style>
+  <script>
+function get()
+{
+
+}
+  </script>
+</head>
+<body>
+  <nav style="height: 30px;background:linear-gradient(#ff5b66,#ff8c38);  border-radius: 20px;"><a href="product-preview.html" style="color: white;">previous design</a>...<a href="expenes-chart-component.html" style="color: white;">Next disign</a></nav>
+
+<div class="div1">
+  <p class="p1" style="font-size: 20px;">My balance</p>
+  <p class="p1">$921.48</p>
+</div>
+<br>
+<div class="div2">
+<h1>  Spending - Last 7 days</h1>
+
+<div class="container">
+  <div class="options">
+      <span class="option" onmouseover="get()">mon</span>
+      <span id=""></span>
+      <span class="option">tue</span>
+      <span class="option">wed</span>
+      <span class="option">thu</span>
+      <span class="option">fri</span>
+      <span class="option">sat</span>
+      <span class="option">sun</span>
+  </div>
+</div>
+
+  <p style="color:darkgray ;">Total this month</p>
+ <span style="font-size: 37px; font-weight:bold; margin-right: 300px;"> $478.33</span>
+
+  <span style="font-weight:bold;">+2.4%</span><br>
+  <span style=" margin-left: 360px;color:darkgray ;">From last month</span>
+</div>
+
+</body>
+</html>
