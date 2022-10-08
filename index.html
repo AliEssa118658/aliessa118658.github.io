@@ -1,35 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body { background-color: #AECDD7; text-align: center; }
-    .mydiv { background-color: white;   border-radius: 25px;width: 300px;  height: auto;   text-align: center;
-      margin:100px auto auto auto;
-  
- }
-    img{ margin: 10px; border-radius: 25px; width: 280px; height: 300px;}
-    p{margin: 10px; font-family: Arial, sans-serif; color: #AECDD7;}
-    h3{margin: 20px;font-family: Arial, sans-serif;}
-  </style>
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<nav style="height: 30px;text-align: left;border-radius: 20px; background-color:white;"><a href="carddetails.html" style="margin-left:10px ;">Next design</a></nav>  
-<div class="mydiv">
-  <img src="images/image-qr-code.png" >
-  <h3>
-    imprve your front-end skills by building projects
-  </h3>
-  <p> Scan the QR code to visit frontend Mentor and take your coding skills to the next level</p> 
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container">
+        <a class="navbar-brand" href="#">Ali</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact">Contact me</a>
+              </li>
+              <li class="nav-item">
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+<!-- main banner -->
+<section class="bgimage" id="home">
+  <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title">Hi, it's me Ali</h2>
+          <p class="hero_desc">I am a  Web Developer from syria</p>
+      </div>
+      </div>
+  </div>
+</section>      <!-- load javascript after loading all html content -->
+<section id="about">
+  <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Me</h1>
+      <div class="row mt-4">
+          <div class="col-lg-4">
+              <img src="images/a.jpg" class= "imageAboutPage" alt="">
+          </div>
 
-</div>
+          <div class="col-lg-8">
+              <p> 
+                  My name is ali essa i am 22 years old  , i study information
+                  technology engineering in the fourth year at Syrian virtual university 
+                  , i am Looking forward to learning more about programming and web development 
+                  ,i spend most of my time learning and coding.  
+              </p>
+              <div class="row mt-3">
+                  <div class="col-md-6">
+                      <ul>
+                          <li>Name: Ali Essa</li>
+                          <li>Age: 22</li>
+                          <li>Occupation: Web Developer</li>
 
-</body>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <ul>
+                          <li>Education: Bachelor Degree in information
+                            technology engineering</li>
+                          <li>university: Syrian virtual university</li>
+                          <li>Specialization: software engineering</li>
+
+                      </ul>
+                  </div>
+              </div>
+              <div class="row mt-3">
+                  <p> i worked about two years in syriatel as customer services then i worked as freelance in FrontEnd Developing: Use markup languages HTML, css, javascript to
+                    create user-friendly web pages Maintain and
+                    improve website Design mobile-based features
+                    Get feedback from, and build solutions for,
+                    users and customers Write functional
+                    requirement documents and guides Create
+                    quality mockups and prototypes Ensure high
+                    quality graphic standards and brand
+                    consistency Stay up-to-date on emerging
+                    technologies, then i developed my self to be able to work as Full stack develpoer using frame work Laravel backend language :
+                    php Frontend: html, css, JS Databases: SQLlite I
+                    also work in another frame work ASP. NET
+                    Backend language : C# Frontend :Xml
+                    Database: SQL      
+                               </p>
+              </div>
+          </div>
+      </div>
+</section>
+<!-- services section-->
+<section id="services">
+  <div class="container">
+      <h1 class="text-center">Services</h1>
+      <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                      <i class="fas servicesIcon fa-clock"></i>
+                      <h4 class="card-title mt-3">Website Development</h4>
+                      <p class="card-text mt-3">I provide all web development services using  many frameworks such as visual studio at .Net and Laravel  
+                      </p>
+                  </div>
+              </div>  
+          </div>
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                      <i class='fas servicesIcon fa-layer-group'></i>
+                      <h4 class="card-title mt-3">Website Design</h4>
+                      <p class="card-text mt-3">
+                        create user-friendly web pages Maintain and
+                    improve website Design mobile-based features
+                    Get feedback from, and build solutions for , using HTML , CSS , javascript , bootstrap , React   
+                      </p>
+                  </div>
+              </div>  
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                      <i class='far servicesIcon fa-check-circle'></i>
+                      <h4 class="card-title mt-3">UNIX/LINUX</h4>
+                      <p class="card-text mt-3">
+                        Basic instructions for Linux (the shell interpreter) and 
+ Basic instructions for dealing with files and  procedures and 
+ Programming procedures and cases and distinguishing between them,
+ In addition to
+Signal programming
+ and Programming synchronization processes and communication between procedures.
+                      </p>
+                  </div>
+              </div>  
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                    <i class='fas servicesIcon fa-wrench'></i>
+                    <h4 class="card-title mt-3">OOP</h4>
+                      <p class="card-text mt-3">Excellent knowledge in object Object-oriented programming with C#,PHP,Python,JS 
+                      </p>
+                  </div>
+              </div>  
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                  <div class="card-body">
+                      <i class='fas servicesIcon fa-mobile-alt'></i>
+                      <h4 class="card-title mt-3">Android development</h4>
+                      <p class="card-text mt-3">
+                        good knowledge and ability to receive small projects to designing and developing applications via andriod studio with java and XML
+                      </p>
+                  </div>
+              </div>  
+          </div>
+
+        
+      </div>
+  </div>
+</section>
+<!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Website for selling computers and printers</h4>
+                            <p class="card-text">A demo site  which the user can view and purchase computers, printers, scanners, and show details about them.</p>
+                            <p>Asp.Net , c# , SQL  </p>
+                            <div class="text-center">
+                                 <a href="https://drive.google.com/file/d/1epFLrfYNvtNcSAG-QcUIOqat_FW4eaz7/view?usp=sharing
+                                 " class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/books.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">website Book Store</h4>
+                            <p class="card-text">website for view the details of the books and about them and more</p>
+                            <br>
+                            <br>
+                            <p>Laravel , PHP , HTML , CSS ,JavaScript and SQLlite</p>
+                            <div class="text-center">
+                                <a href="https://drive.google.com/file/d/1AYt8Q0KS696Fh7k3CCgbkfIimPlW3f_F/view?usp=sharing
+                                " class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/res.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Restaurant advertising web page</h4>
+                            <p class="card-text">web page show details about Restaurant opening</p>
+                            <br><br><br>
+                            <p>HTML,CSS,JavaScript</p>
+                            <div class="text-center">
+                                <a href="https://drive.google.com/file/d/1-iPhhEJPh7nidWPvSD9SZefL3eVj7VZv/view?usp=sharing" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/py.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">famous Knaspack problem as web page</h4>
+                            <p class="card-text">Solve the famous Knaspack problem ,using genetic and dynamic algorithms and show the case as an interactive web page .</p>
+                            <p>Django , python , HTML,CSS,JavaScript</p>
+                            <div class="text-center">
+                                <a href="https://drive.google.com/file/d/1rB6RYFXeksCLHeBgksew6bF8HBVs_6Cj/view?usp=sharing" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/web.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Accounting App(My Outly)
+                            
+                            </h4>
+                            <p class="card-text">An application for andriod that helps you calculate the expense
+                              Personal and family. It shows you a series of useful reports about them..</p>
+                              <br>
+                              <p>Android studio , Java , XML</p>
+                            <div class="text-center">
+                                <a href="https://drive.google.com/file/d/1e6ngx-WJ8v7pDpdABAH7COvFLX3OxF2S/view?usp=sharing" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<section id="Contact">
+ <!-- footer section-->
+ <footer id="footer">
+  <div class="container-fluid">
+      <!-- social media icons -->
+      <div class="social-icons mt-4">
+          <a href="tel:+963-93455-0527" target="_blank"><i class="fab fa fa-whatsapp"></i></a>
+
+          <a href="https://www.facebook.com/profile.php?id=100007706688563" target="_blank"><i class="fab fa-facebook"></i></a>
+          
+          <a href="https://www.instagram.com/aliiii_essa/" target="_blank"><i class="fab fa-instagram"></i></a>
+          
+          <a href="https://www.linkedin.com/in/ali-essa-97ab85195/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          
+          <a href="mailto: aliessa.ae99@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+
+      </div>
+  </div>
+</footer>
+</section>
+    <script src="script/script.js"></script>
+
+  </body>
 </html>
