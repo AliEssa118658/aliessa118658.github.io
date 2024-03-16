@@ -1,6 +1,4 @@
 
-
-
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
 
@@ -13,14 +11,29 @@ window.onscroll = function() {
         header.classList.remove('navbarDark');
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    // Simulate an API request or any async operation
+    setTimeout(() => {
+        hideLoader();
+        showContent();
+    }, 3000); // Replace with your actual data loading logic and time
 
-
+    function hideLoader() {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none";
+     
+    }
+    
+    function showContent() {
         const content = document.getElementById("content");
-        content.style.display = "block";
+        content.classList.add("block");
+ 
+        const part = document.getElementById("particles-js");
+        part.classList.add("block");
         var p = document.getElementById('text');
         p.innerHTML = '';
         var n = 0;
-        var str = 'Software Engineer, Full-Stack Web Developer';
+        var str = 'Software engineer, Full-stack web Developer';
         var typeTimer = setInterval(function() {
         n = n + 1;
         p.innerHTML = "" + str.slice(0, n);
@@ -39,12 +52,7 @@ window.onscroll = function() {
             };
             }, 500);
         };
-        }, 100)
+        }, 60)
+    }
+});
 
-
-    
-
-    
-
-
-        

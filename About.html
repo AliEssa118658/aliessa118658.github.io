@@ -18,8 +18,15 @@
 </head>
 
 <body>
-
-    <div id="content" >
+    <div class="wrapper" id="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+    </div>
+    <div id="content" class="hidden">
         <nav class="navbar navbar-expand fixed-top navbarScroll p-0">
             <div class="" style="width: 100% !important;">
                
@@ -138,7 +145,7 @@
             </div>
         </div>
     </section>
-</div>
+    </div>
 <script src="script/script.js"></script>
 <script>    var t = document.getElementById('about-text');
     t.innerHTML = '';
