@@ -50,7 +50,7 @@ body section{
     }
 .bgimage {
     height:100vh;
-    background: url('images/banner.jpg');
+    background: url('images/banner.jpg?');
     background-size:cover;
     position:relative;
 }
