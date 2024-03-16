@@ -147,7 +147,11 @@
     </section>
     </div>
 <script src="script/script.js"></script>
-<script>    var t = document.getElementById('about-text');
+<script>   
+  document.addEventListener("DOMContentLoaded", () => {
+
+    setTimeout(() => {
+        var t = document.getElementById('about-text');
     t.innerHTML = '';
     var n = 0;
     var string = 'Dedicated and versatile Software Engineering Full-stack Developer with expertise in React.js and Laravel. Adept at designing and implementing innovative solutions to complex problems, I bring   comprehensive skill set that extends across the full development stack. My proficiency in React.j  enables me to craft dynamic and responsive user interfaces, while my experience in Laravel empower  me to develop robust and scalable backend systems.';
@@ -170,6 +174,9 @@
         }, 500);
     };
     }, 50)
+    }, 3000);  
+});
+ 
 </script>
 </body>
 </html>
