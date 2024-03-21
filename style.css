@@ -46,7 +46,7 @@
   } 
   
 body section{
-    background-color: #0A0A0A;
+    background-color: #3b3939;
     }
 .bgimage {
     height:100vh;
@@ -113,7 +113,7 @@ body section{
     color: #008000;
 }
 .fab {
-    color: #0A0A0A;
+    color: #3b3939;
 }
 /* footer styling */
 #footer {
@@ -131,7 +131,7 @@ body section{
 
 /* loader style */
 body{
-    background-color: #0A0A0A !important;
+    background-color: #3b3939 !important;
 }
 .wrapper {
     width: 200px;
@@ -147,7 +147,7 @@ body{
     height: 20px;
     position: absolute;
     border-radius: 50%;
-    background-color: #ffaf00;
+    background-color: #ceb34e;
     left: 15%;
     transform-origin: 50%;
     animation: circle7124 .5s alternate infinite ease;
@@ -229,29 +229,29 @@ body{
 
     font-size: 35px;
     width: 100%;
-    border-bottom: 1px solid #ffaf00;
+    border-bottom: 1px solid #ceb34e;
 }
    .navbar-nav li{
-    border-inline: 1px solid #ffaf00;
+    border-inline: 1px solid #ceb34e;
     width: 33.3333%;
     height: max-content;
     text-align: center;
     padding-bottom: 0%;
-    background-color: #0A0A0A;
+    background-color: #3b3939;
     transition: all 0.5s ease;
 
    }
    .navbar-nav li.active,.navbar-nav li:hover{
-    background-color: #ffaf00;
+    background-color: #ceb34e;
    }
    .navbar-nav li.active a,.navbar-nav li:hover a{
-    color: #0A0A0A;
+    color: #3b3939;
     font-weight: 600;
    }
    .navbar-nav li a{
     transition: all 0.5s ease;
 
-    color: #ffaf00;
+    color: #ceb34e;
     font-weight: 600;
    }
 
@@ -296,7 +296,7 @@ body{
       position: absolute;
       top: 12px;
      
-      color: #ffaf00;
+      color: #ceb34e;
       font-size: 50px;
       line-height: 40px;
       
@@ -486,7 +486,7 @@ body{
     justify-content: center;
     text-align: center;
     gap: 10px;
-    background: linear-gradient(-45deg, #ffaf00d6 0%, #ffaf00 100% );
+    background: linear-gradient(-45deg, #ffaf00d6 0%, #ceb34e 100% );
     color: #e8e8e8;
     padding: 20px;
     line-height: 1;
@@ -497,14 +497,14 @@ body{
   }
   .visit{
     display: block;
-    background-color: #0A0A0A;
+    background-color: #3b3939;
     color: white;
     padding: 8px 13px 6px 13px;
     text-decoration: none;
     border-radius: 10px;
   }
   .visit:hover{
-    color: #ffaf00;
+    color: #ceb34e;
   }
   .card .content .heading {
     font-size: 32px;
@@ -676,7 +676,7 @@ body{
     }
     .content__container::after, .content__container::before{
         top: 0px;
-    color: #ffaf00;
+    color: #ceb34e;
     font-size: 37px;
     }
     .content__container::after{
@@ -745,7 +745,7 @@ body{
     }
     .content__container::after, .content__container::before{
         top: 0px;
-    color: #ffaf00;
+    color: #ceb34e;
     font-size: 37px;
     }
     .content__container::after{
@@ -823,7 +823,7 @@ body{
     }
     .content__container::after, .content__container::before{
         top: 0px;
-    color: #ffaf00;
+    color: #ceb34e;
     font-size: 37px;
     }
     .content__container::after{
@@ -874,7 +874,7 @@ body{
   .socail-media li a {
     width: 50px;
     height: 50px;
-    background-color: #0A0A0A;
+    background-color: #3b3939;
     display: flex;
     overflow: hidden;
     align-items: center;
@@ -882,7 +882,7 @@ body{
     justify-content: center;
     position: relative;
     z-index: 9;
-    border: 1px solid #ffaf00;
+    border: 1px solid #ceb34e;
     border-radius: 5px;
     ;
   }
@@ -903,7 +903,7 @@ body{
     height: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
     clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
-    background-color: #ffaf00;
+    background-color: #ceb34e;
     z-index: -1;
     top: 0;
     left: 0;
