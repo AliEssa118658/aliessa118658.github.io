@@ -755,11 +755,11 @@ body{
     .about-text{
         font-size: 19px;
     }
-
-  }
-      .wrapper{
+  .wrapper{
       left:35%;
     }
+  }
+    
 
 
   @media(max-width:450px) {
