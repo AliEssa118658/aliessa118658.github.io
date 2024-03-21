@@ -757,10 +757,15 @@ body{
     }
 
   }
-
+      .wrapper{
+      left:35%;
+    }
 
 
   @media(max-width:450px) {
+          .wrapper{
+      left:19%;
+    }
     .navbar-nav{
         font-size: 20px;
     }
