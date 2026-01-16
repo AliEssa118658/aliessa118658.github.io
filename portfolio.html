@@ -2,9 +2,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ali Essa Portfolio</title>
+  <title>Ali Essa - Portfolio | Full-Stack Developer & Software Engineer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Ali Essa - Full-stack developer specializing in ASP.NET Core, React, Next.js, Laravel, and cloud solutions. View my projects in fintech, e-commerce, and enterprise applications.">
+  <meta name="keywords" content="Ali Essa, full-stack developer, software engineer, ASP.NET Core, React, Next.js, Laravel, Azure, Docker, portfolio">
+  <meta name="author" content="Ali Essa">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aliessa118658.github.io/portfolio.html">
+  <meta property="og:title" content="Ali Essa - Portfolio | Full-Stack Developer">
+  <meta property="og:description" content="Portfolio of Ali Essa - Full-stack developer specializing in modern web technologies and cloud solutions.">
+  <meta property="og:image" content="https://aliessa118658.github.io/images/AliEssa.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://aliessa118658.github.io/portfolio.html">
+  <meta property="twitter:title" content="Ali Essa - Portfolio | Full-Stack Developer">
+  <meta property="twitter:description" content="Portfolio of Ali Essa - Full-stack developer specializing in modern web technologies.">
+  <meta property="twitter:image" content="https://aliessa118658.github.io/images/AliEssa.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/AliEssa.png">
   <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
   <!-- bootstrap CDN -->
@@ -134,10 +154,48 @@
                 </li>
             </ul>
         </div>
-        <section id="portfolio" style="margin-top: 5rem;">
+        <section id="portfolio" style="margin-top: 3rem;">
             <div class="container" style="height: 85vh; overflow-y: auto">
+                <!-- Filter Categories Section -->
                 <div class="row">
-                   <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-12">
+                        <div class="filter-container">
+                            <div class="filter-buttons-wrapper">
+                                <button class="filter-btn active" data-filter="all">
+                                    <span>All Projects</span>
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="filter-btn" data-filter="react">
+                                    <span>Next.js/React.js</span>
+                                    <i class="fab fa-react"></i>
+                                </button>
+                                <button class="filter-btn" data-filter="laravel">
+                                    <span>Laravel</span>
+                                    <i class="fab fa-laravel"></i>
+                                </button>
+                                <button class="filter-btn" data-filter="node">
+                                    <span>Node.js</span>
+                                    <i class="fab fa-node"></i>
+                                </button>
+                                <button class="filter-btn" data-filter="php">
+                                    <span>PHP</span>
+                                    <i class="fab fa-php"></i>
+                                </button>
+                                <button class="filter-btn" data-filter="dotnet">
+                                    <span>.NET Core</span>
+                                    <i class="fab fa-microsoft"></i>
+                                </button>
+                                <button class="filter-btn" data-filter="shopify">
+                                    <span>Shopify</span>
+                                    <i class="fab fa-shopify"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row" id="portfolioGrid">
+                   <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel react nextjs docker azure">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/Screenshot 2026-01-02 110545.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -147,19 +205,79 @@
                             <p class="para">
                              Remit Circle is a B2B cross-border payments platform enabling fast, secure, and cost-effective international money transfers. Built with Laravel and Docker, the system follows DevOps best practices and uses Azure CI/CD for automated testing and reliable deployments. The platform supports real-time transaction tracking, enterprise-grade security, and seamless integrations with global financial partners.
                             </p>
-                            <a class="visit"  href="https://myremitcircle.com/" target="_blank"> Visit Website</a>
+                            <a class="visit"  href="https://myremitcircle.com/" target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/nextjs.svg" alt="">
-                                <img src="./images/docker-icon.svg" alt="">
-                                <img src="./images/azure.png" alt="">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/react-2.svg" alt="">
+                                <img src="./images/nextjs.svg" alt="Next.js" loading="lazy">
+                                <img src="./images/docker-icon.svg" alt="Docker" loading="lazy">
+                                <img src="./images/azure.png" alt="Azure" loading="lazy">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="dotnet docker azure">
+                        <div class="card-container">
+                            <div class="card" loading="lazy" style="background: url('./images/xc.png') no-repeat; background-size: cover;">
+                            <div class="front-content">
+                            </div>
+                            <div class="content">
+                            <p class="heading">XC exchange</p>
+                            <p class="para">
+                                Foreign exchange platform with real-time currency conversion and secure transactions. Built with ASP.NET Core RESTful API, Entity Framework Core, and SQL Server database. Deployed on Azure using Docker containers for consistent environments. Features optimized queries, real-time exchange rate APIs, and secure payment processing workflows for multi-currency operations.
+                            </p>
+                            <a class="visit"  href="https://xcexchange.com" target="_blank" rel="noopener noreferrer"> Visit Website</a>
+                            <div class="flex gap-1">
+                                <img src="./images/dotnet.svg" alt=".NET" loading="lazy">
+                                <img src="./images/docker-icon.svg" alt="Docker" loading="lazy">
+                                <img src="./images/azure.png" alt="Azure" loading="lazy">
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="dotnet docker azure">
+                        <div class="card-container">
+                            <div class="card" loading="lazy" style="background: url('./images/xinfu.png') no-repeat; background-size: cover;">
+                            <div class="front-content">
+                            </div>
+                            <div class="content">
+                            <p class="heading">Xinfu Forex</p>
+                            <p class="para">
+                                AUSTRAC-compliant financial remittance platform built with ASP.NET Core. Features secure transaction processing, compliance reporting, and regulatory documentation management. Azure Cloud Services provide scalable infrastructure with Docker containerization. SQL Server handles transaction tracking, audit logging, and encrypted compliance data storage. Includes automated compliance checks, multi-currency support, and KYC workflows.
+                            </p>
+                            <a class="visit"  href="https://xinfu.com.au" target="_blank" rel="noopener noreferrer"> Visit Website</a>
+                            <div class="flex gap-1">
+                                <img src="./images/dotnet.svg" alt=".NET" loading="lazy">
+                                <img src="./images/docker-icon.svg" alt="Docker" loading="lazy">
+                                <img src="./images/azure.png" alt="Azure" loading="lazy">
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="dotnet docker azure">
+                        <div class="card-container">
+                            <div class="card" loading="lazy" style="background: url('./images/rtd.png') no-repeat; background-size: cover;">
+                            <div class="front-content">
+                            </div>
+                            <div class="content">
+                            <p class="heading">Remit To Dubai</p>
+                            <p class="para">
+                                AUSTRAC-compliant international money transfer platform. Built with ASP.NET Core API for secure cross-border payments. Azure provides scalable cloud infrastructure with auto-scaling capabilities. Docker enables seamless CI/CD pipelines and consistent environments. SQL Server with stored procedures handles transactions, real-time exchange rates, and multi-currency wallet management.
+                            </p>
+                            <a class="visit"  href="https://remittodubai.com" target="_blank" rel="noopener noreferrer"> Visit Website</a>
+                            <div class="flex gap-1">
+                                <img src="./images/dotnet.svg" alt=".NET" loading="lazy">
+                                <img src="./images/docker-icon.svg" alt="Docker" loading="lazy">
+                                <img src="./images/azure.png" alt="Azure" loading="lazy">
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="react nextjs graphql docker node">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/ori.jpg') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -167,24 +285,21 @@
                             <div class="content">
                             <p class="heading">Oriana</p>
                             <p class="para">
-                              Oriana is a modern web platform designed to help organizations shape the future of work through intelligent workforce models and strategic people alignment. Built with Next.js for high-performance, scalable frontend experiences and powered by Directus as a headless CMS, the platform delivers flexibility and content-driven scalability. GraphQL is used to enable efficient.
-                                
+                              Oriana is a modern web platform designed to help organizations shape the future of work through intelligent workforce models and strategic people alignment. Built with Next.js for high-performance, scalable frontend experiences and powered by Directus as a headless CMS, the platform delivers flexibility and content-driven scalability. GraphQL enables efficient data fetching and real-time updates for seamless user experiences.
                             </p>
-                            <a class="visit"  href="https://www.oriana.life/" target="_blank"> Visit Website</a>
+                            <a class="visit"  href="https://www.oriana.life/" target="_blank" rel="noopener noreferrer node"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/nextjs.svg" alt="">
-                                <img src="./images/docker-icon.svg" alt="">
-                                <img src="./images/GraphQl.svg" alt="">
-                                <img src="./images/directus.png" alt="">
-                                <img src="./images/react-2.svg" alt="">
-
-                            
+                                <img src="./images/nextjs.svg" alt="Next.js" loading="lazy">
+                                <img src="./images/docker-icon.svg" alt="Docker" loading="lazy">
+                                <img src="./images/GraphQl.svg" alt="GraphQL" loading="lazy">
+                                <img src="./images/directus.png" alt="Directus" loading="lazy">
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="react nextjs express node">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/meal.jpg') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -193,22 +308,19 @@
                             <p class="heading">Meal Plans</p>
                             <p class="para">
                                 MealPlans.ae is a premium wellness and culinary platform designed to help individuals achieve their weight, performance, and lifestyle goals effortlessly. Built using Next.js for a lightning-fast and SEO-friendly frontend, Express.js for a robust backend, and React.js for a dynamic Content Management System (CMS), the website offers a seamless user experience and complete flexibility for content management.
-
-                                
                             </p>
-                            <a class="visit"  href="https://mealplans.ae/" target="_blank"> Visit Website</a>
+                            <a class="visit"  href="https://mealplans.ae/" target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/react-2.svg" alt="">
-                                <img src="./images/tailwindcss.svg" alt="">
-                                <img src="./images/nextjs.svg" alt="">
-                                <img src="./images/express-js.svg" alt="">
-                            
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
+                                <img src="./images/tailwindcss.svg" alt="Tailwind CSS" loading="lazy">
+                                <img src="./images/nextjs.svg" alt="Next.js" loading="lazy">
+                                <img src="./images/express-js.svg" alt="Express.js" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="react">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/di.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -218,17 +330,16 @@
                             <p class="para">
                                 A modern, fully dynamic website developed for a leading insurance company in Dubai, designed entirely using React.js for the frontend and styled with Tailwind CSS for a sleek, responsive user experience. The website is seamlessly integrated with Strapi as the Content Management System (CMS), empowering the client to easily manage and update every aspect of the website, including content, images, and page structure.
                             </p>
-                            <a class="visit"  href="https://di.aratech.co/" target="_blank"> Visit Website</a>
+                            <a class="visit"  href="https://di.aratech.co/" target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/react-2.svg" alt="">
-                                <img src="./images/tailwindcss.svg" alt="">
-                            
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
+                                <img src="./images/tailwindcss.svg" alt="Tailwind CSS" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="react node">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/proemballages.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -236,11 +347,11 @@
                             <div class="content">
                             <p class="heading">PROEMBALLAGES</p>
                             <p class="para">
-                                Shop for high-quality, custom packaging solutions designed specifically for the snack food industry. Specializing in creating unique, eco-friendly packaging that meets your brand’s needs, from boxes to containers. Choose the design, size and material to perfectly match your products. Whether you’re looking for stylish takeaway packaging or eco-friendly materials,                            </p>
-                            <a class="visit"  href="https://proemballage.odvertising.com/" target="_blank"> Visit Website</a>
+                                Shop for high-quality, custom packaging solutions designed specifically for the snack food industry. Specializing in creating unique, eco-friendly packaging that meets your brand's needs, from boxes to containers. Choose the design, size and material to perfectly match your products. Whether you're looking for stylish takeaway packaging or eco-friendly materials,                            </p>
+                            <a class="visit"  href="https://proemballage.odvertising.com/" target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/react-2.svg" alt="">
-                                <img src="./images/tailwindcss.svg" alt="">
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
+                                <img src="./images/tailwindcss.svg" alt="Tailwind CSS" loading="lazy">
                             
                             </div>
                             </div>
@@ -248,7 +359,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="php laravel">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/carswitch.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -257,14 +368,14 @@
                             <p class="heading">carswitch</p>
                             <p class="para">
                                 CarSwitch is the leading platform for buying and selling cars in the UAE and KSA, offering a hassle-free, end-to-end experience. From test drives, car inspections, and valuations to seamless documentation, ownership transfers, and insurance, we take care of everything. Plus, with our fast car loan approvals, you can drive away in your dream car quicker than ever.                                 </p>
-                            <a class="visit"  href="https://carswitch.com/" target="_blank"> Visit Website</a>
+                            <a class="visit"  href="https://carswitch.com/" target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/php-1.svg" alt="">
-                                <img src="./images/mysql-logo.svg" alt="">
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/javascript-1.svg" alt="">
-                                <img src="./images/jquery.svg" alt="">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/mysql-logo.svg" alt="MySQL" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/javascript-1.svg" alt="JavaScript" loading="lazy">
+                                <img src="./images/jquery.svg" alt="jQuery" loading="lazy">
                             
                             </div>
                             </div>
@@ -272,7 +383,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="react">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/aimgo-2.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -284,8 +395,8 @@
                                 I worked on front end on my own and handled with Rest API's.
                                 </p>
                             <div class="flex gap-1">
-                                <img src="./images/react-2.svg" alt="">
-                                <img src="./images/tailwindcss.svg" alt="">
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
+                                <img src="./images/tailwindcss.svg" alt="Tailwind CSS" loading="lazy">
                             
                             </div>
                             </div>
@@ -293,7 +404,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="react">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/astrofi.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -305,10 +416,10 @@
                                 A comprehensive selling store in all aspects.
                                 I worked on front end on my own and handled with Rest API's.
                                 </p>
-                            <a class="visit"  href="https://services.astrofi.com/"  target="_blank" > Visit Website</a>
+                            <!-- <a class="visit"  href="https://services.astrofi.com/"  target="_blank" > Visit Website</a> -->
                             <div class="flex gap-1">
-                                <img src="./images/react-2.svg" alt="">
-                                <img src="./images/tailwindcss.svg" alt="">
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
+                                <img src="./images/tailwindcss.svg" alt="Tailwind CSS" loading="lazy">
                             
                             </div>
                             </div>
@@ -316,7 +427,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="shopify">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/petit.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -327,16 +438,16 @@
                                 A children's clothing store with many advantages in the Gulf countries, India and Europe
                                 I designed it entirely on the Shopify platform
                                 </p>
-                            <a class="visit"  href="https://petite-peaches.com/"  target="_blank" > Visit Website</a>
+                            <a class="visit"  href="https://petite-peaches.com/"  target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/shopify.svg" ;alt="">
+                                <img src="./images/shopify.svg" alt="Shopify" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/drift.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -347,15 +458,15 @@
                                 An international thought-leadership and exhibition platform pioneering the latest innovations and applications in smart, autonomous, and sustainable urban mobility across air, land, and sea.
                                 with amazing dashboard to control all content in website
                                 </p>
-                            <a class="visit"  href="https://driftx.com/"  target="_blank" > Visit Website</a>
+                            <a class="visit"  href="https://driftx.com/"  target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/php-1.svg" alt="">
-                                <img src="./images/javascript-1.svg" alt="">
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/bootstrap-4.svg" alt="">
-                                <img src="./images/mysql-logo.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/javascript-1.svg" alt="JavaScript" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/bootstrap-4.svg" alt="Bootstrap" loading="lazy">
+                                <img src="./images/mysql-logo.svg" alt="MySQL" loading="lazy">
                             
                             </div>
                             </div>
@@ -363,7 +474,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/fatorah.png?') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -372,16 +483,16 @@
                             <div class="content">
                             <p class="heading">FATORAH</p>
                             <p class="para">
-                                Fatorah’s mission is to empower healthcare providers with innovative solutions and industry expertise, optimizing revenue cycles for sustainable growth. By providing tailored strategies, that will not only elevate financial operations but also seamlessly enhance the quality of healthcare services, contributing to the advancement of the healthcare landscape
+                                Fatorah's mission is to empower healthcare providers with innovative solutions and industry expertise, optimizing revenue cycles for sustainable growth. By providing tailored strategies, that will not only elevate financial operations but also seamlessly enhance the quality of healthcare services, contributing to the advancement of the healthcare landscape
                                 </p>
-                            <a class="visit"  href="https://fatorah.ae/" target="_blank"> Visit Website</a>
+                            <a class="visit"  href="https://fatorah.ae/" target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/php-1.svg" alt="">
-                                <img src="./images/javascript-1.svg" alt="">
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/mysql-logo.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/javascript-1.svg" alt="JavaScript" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/mysql-logo.svg" alt="MySQL" loading="lazy">
                             
                             </div>
                             </div>
@@ -389,37 +500,37 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/almasraf.png') no-repeat; background-size: cover;">
                             <div class="front-content">
-                            <img src="./images/Logo.svg?"/>
+                            <img src="./images/Logo.svg?" alt="Al Masraf Logo" loading="lazy"/>
                             </div>
                             <div class="content">
                             <p class="heading">Al Masraf</p>
                             <p class="para">
                                 A comprehensive financial platform built to streamline banking processes and enhance user experience. Leveraging Laravel as the backend framework, PHP for server-side scripting, and MySQL for robust data management, the website offers a secure and efficient banking solution.
                             </p>
-                            <a class="visit" target="_blank" href="https://almasraf.ae/"  target="_blank" >Visit Website</a>
+                            <a class="visit" href="https://almasraf.ae/" target="_blank" rel="noopener noreferrer">Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/javascript-1.svg" alt="">
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/jquery.svg" alt="">
-                                <img src="./images/bootstrap-4.svg" alt="">
-                                <img src="./images/mysql-logo.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/javascript-1.svg" alt="JavaScript" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/jquery.svg" alt="jQuery" loading="lazy">
+                                <img src="./images/bootstrap-4.svg" alt="Bootstrap" loading="lazy">
+                                <img src="./images/mysql-logo.svg" alt="MySQL" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
             
-                    <div class="col-lg-4 col-md-6  mb-4">
+                    <div class="col-lg-4 col-md-6  mb-4 portfolio-item" data-categories="laravel react php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/ebsar.png') no-repeat; background-size: cover;">
                             <div class="front-content">
-                            <img src="./images/Logo.svg"/>
+                            <img src="./images/Logo.svg" alt="Al Masraf Logo" loading="lazy"/>
                             </div>
                             <div class="content">
                             <p class="heading">Al Masraf Intranet (Ebsar)</p>
@@ -428,11 +539,11 @@
                                 </p>
                             <a class="visit"  href="#" onclick="alert('This Enternal Website for Al Masraf You can not display it.')"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/php-1.svg" alt="">
-                                <img src="./images/react-2.svg" alt="">
-                                <img src="./images/sqlite.svg" alt="">
-                                <img src="./images/tailwindcss.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
+                                <img src="./images/sqlite.svg" alt="SQLite" loading="lazy">
+                                <img src="./images/tailwindcss.svg" alt="Tailwind CSS" loading="lazy">
                             
                             </div>
                             </div>
@@ -440,11 +551,11 @@
                         </div>
                     </div>
             
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/aramco.png') no-repeat; background-size: cover;">
                             <div class="front-content">
-                            <img src="./images/aramco-logo.svg?" style="    width: 200px;height: 201px;"/>
+                            <img src="./images/aramco-logo.svg?" alt="Aramco Logo" style="width: 200px;height: 201px;" loading="lazy"/>
                             </div>
                             <div class="content">
                             <p class="heading">Aramco Screens Wall</p>
@@ -454,24 +565,23 @@
                                 <br>note: Please zoom out when viewing pages to view the full screen size simulation , each screen have a specific mask.
                                 </p>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/php-1.svg" alt="">
-
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/jquery.svg" alt="">
-                                <img src="./images/sqlite.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/jquery.svg" alt="jQuery" loading="lazy">
+                                <img src="./images/sqlite.svg" alt="SQLite" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
             
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/aimgo.png') no-repeat; background-size: cover;">
                             <div class="front-content">
-                            <img src="./images/aimgologo.svg?"  style="    width: 200px;height: 201px;"/>
+                            <img src="./images/aimgologo.svg?" alt="Aimgo Logo" style="width: 200px;height: 201px;" loading="lazy"/>
                             </div>
                             <div class="content">
                             <p class="heading">Aimgo Tech</p>
@@ -480,39 +590,37 @@
                                 In addition, it is responsive and displays on all screen sizes
                                     </p>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/php-1.svg" alt="">
-
-                                <img src="./images/javascript-1.svg" alt="">
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/jquery.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/javascript-1.svg" alt="JavaScript" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/jquery.svg" alt="jQuery" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
             
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/hotel.png') no-repeat; background-size: cover;">
                             <div class="front-content">
-                            <img src="./images/hotellogo.png" style="  width: 250px;height: 100px;"/>
+                            <img src="./images/hotellogo.png" alt="Hotel Hub Logo" style="width: 250px;height: 100px;" loading="lazy"/>
                             </div>
                             <div class="content">
                             <p class="heading">Hotel Hub</p>
                             <p class="para">
                                 I designed and developed a project aimed at providing an online portal for tenants to search for suitable hotels in different provinces in Syria and secure bookings according to their needs. The project utilizes an easy-to-use interface that allows users to search for hotels in any region of Syria, select the appropriate hotel, and view available rooms for reservation. Additionally, users can filter search results based on various criteria such as location, price range, room type, and facilities.
-
                                 </p>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/php-1.svg" alt="">
-                                <img src="./images/javascript-1.svg" alt="">
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/bootstrap-4.svg" alt="">
-                                <img src="./images/mysql-logo.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/javascript-1.svg" alt="JavaScript" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/bootstrap-4.svg" alt="Bootstrap" loading="lazy">
+                                <img src="./images/mysql-logo.svg" alt="MySQL" loading="lazy">
                             
                             </div>
                             </div>
@@ -520,11 +628,11 @@
                         </div>
                     </div>
             
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="laravel php">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/women.png') no-repeat; background-size: cover;">
                             <div class="front-content">
-                            <img src="./images/large-logo.svg?" style="    width: 100px;height: 100px;"/>
+                            <img src="./images/large-logo.svg?" alt="Arab Women Festival Logo" style="width: 100px;height: 100px;" loading="lazy"/>
                             </div>
                             <div class="content">
                             <p class="heading">Arab Women Festival</p>
@@ -536,20 +644,19 @@
                                 In addition to a photo and video gallery of events at the festival
                                 </p>
                             <div class="flex gap-1">
-                                <img src="./images/laravel.svg" alt="">
-                                <img src="./images/php-1.svg" alt="">
-
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/jquery.svg" alt="">
-                                <img src="./images/sqlite.svg" alt="">
+                                <img src="./images/laravel.svg" alt="Laravel" loading="lazy">
+                                <img src="./images/php-1.svg" alt="PHP" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/jquery.svg" alt="jQuery" loading="lazy">
+                                <img src="./images/sqlite.svg" alt="SQLite" loading="lazy">
                             </div>
                             </div>
                         </div>
                         </div>
                     </div>
     
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="javascript">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/banks.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -562,11 +669,10 @@
                                     </p>
                             <a class="visit" href="#" onclick="alert('This Enternal Website for The Banks you can not display it.')">Visit Website</a>
                             <div class="flex gap-1">
-                            
-                                <img src="./images/javascript-1.svg" alt="">
-                                <img src="./images/html-1.svg" alt="">
-                                <img src="./images/css-3.svg" alt="">
-                                <img src="./images/jquery.svg" alt="">
+                                <img src="./images/javascript-1.svg" alt="JavaScript" loading="lazy">
+                                <img src="./images/html-1.svg" alt="HTML" loading="lazy">
+                                <img src="./images/css-3.svg" alt="CSS" loading="lazy">
+                                <img src="./images/jquery.svg" alt="jQuery" loading="lazy">
                             </div>
                             </div>
                         </div>
@@ -575,7 +681,7 @@
             
                  
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-categories="react">
                         <div class="card-container">
                             <div class="card" loading="lazy" style="background: url('./images/res.png') no-repeat; background-size: cover;">
                             <div class="front-content">
@@ -585,11 +691,9 @@
                             <p class="para">
                                 Creative restaurant website showing all details of the  restaurant in one page 
                                 </p>
-                            <a class="visit"  href="https://restaurant-5fv87kpx2-aliessa118658.vercel.app/"  target="_blank" > Visit Website</a>
+                            <a class="visit"  href="https://restaurant-5fv87kpx2-aliessa118658.vercel.app/"  target="_blank" rel="noopener noreferrer"> Visit Website</a>
                             <div class="flex gap-1">
-                                <img src="./images/react-2.svg" alt="">
-                                
-                            
+                                <img src="./images/react-2.svg" alt="React" loading="lazy">
                             </div>
                             </div>
                         </div>
@@ -604,7 +708,207 @@
             
         </section>
     </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top" style="display: none; position: fixed; bottom: 30px; right: 30px; background: #ffaf00; color: #0A0A0A; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer; font-size: 20px; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: all 0.3s;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
 <script src="script/script.js"></script>
+<script>
+// Portfolio Filtering Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    // Filter functionality
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const filterValue = this.getAttribute('data-filter');
+            let visibleCount = 0;
+            
+            portfolioItems.forEach(item => {
+                const categories = item.getAttribute('data-categories');
+                
+                if (filterValue === 'all') {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeIn 0.5s';
+                    visibleCount++;
+                } else if (categories) {
+                    // Split categories by space and check if filterValue exists as a complete word
+                    const categoryArray = categories.toLowerCase().split(/\s+/);
+                    const filterLower = filterValue.toLowerCase();
+                    
+                    if (categoryArray.includes(filterLower)) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeIn 0.5s';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Update results count if needed
+            console.log(`Showing ${visibleCount} projects`);
+        });
+    });
+    
+    // Back to top button
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+    
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Add enhanced styles for filter section
+const style = document.createElement('style');
+style.textContent = `
+    .filter-container {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    
+    .filter-title {
+        color: #ffaf00;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .filter-buttons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        max-width: auto;
+        margin: 0 auto;
+    }
+    
+    .filter-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(26, 26, 26, 0.8);
+        color: #ffaf00;
+        border: 2px solid #ffaf00;
+        padding: 0.75rem 1.75rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+    }
+    
+    .filter-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 175, 0, 0.2), transparent);
+        transition: left 0.5s;
+    }
+    
+    .filter-btn:hover::before {
+        left: 100%;
+    }
+    
+    .filter-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 175, 0, 0.4);
+        border-color: #ffaf00;
+        background: rgba(255, 175, 0, 0.1);
+    }
+    
+    .filter-btn.active {
+        background: #ffaf00;
+        color: #0A0A0A;
+        border-color: #ffaf00;
+        box-shadow: 0 4px 15px rgba(255, 175, 0, 0.5);
+    }
+    
+    .filter-btn.active:hover {
+        background: #ffaf00;
+        color: #0A0A0A;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(255, 175, 0, 0.6);
+    }
+    
+    .filter-btn i {
+        font-size: 1.1rem;
+    }
+    
+    .filter-btn span {
+        position: relative;
+        z-index: 1;
+    }
+    
+    @keyframes fadeIn {
+        from { 
+            opacity: 0; 
+            transform: translateY(20px) scale(0.95); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0) scale(1); 
+        }
+    }
+    
+    #backToTop:hover {
+        transform: scale(1.1) translateY(-3px);
+        box-shadow: 0 6px 12px rgba(255, 175, 0, 0.4);
+    }
+    
+    @media (max-width: 768px) {
+        .filter-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .filter-buttons-wrapper {
+            gap: 0.75rem;
+        }
+        
+        .filter-btn {
+            padding: 0.6rem 1.25rem;
+            font-size: 0.85rem;
+        }
+        
+        .filter-btn i {
+            font-size: 1rem;
+        }
+    }
+`;
+document.head.appendChild(style);
+</script>
 
 </body>
 </html>
