@@ -1,58 +1,52 @@
-
-// add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
-
-window.onscroll = function() {
-    var top = window.scrollY;
-    if(top >=100) {
-        header.classList.add('navbarDark');
-    }
-    else {
-        header.classList.remove('navbarDark');
-    }
-}
 document.addEventListener("DOMContentLoaded", () => {
-    // Simulate an API request or any async operation
-    setTimeout(() => {
-        hideLoader();
-        showContent();
-    }, 3000); // Replace with your actual data loading logic and time
+  const nav = document.getElementById("siteNav");
+  const toggle = document.getElementById("navToggle");
+  const navLinks = document.querySelectorAll('.site-nav > a[href^="#"]');
+  const sections = [...navLinks]
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
 
-    function hideLoader() {
-        const loader = document.getElementById("loader");
-        loader.style.display = "none";
-     
-    }
-    
-    function showContent() {
-        const content = document.getElementById("content");
-        content.classList.add("block");
- 
-        const part = document.getElementById("particles-js");
-        part.classList.add("block");
-        var p = document.getElementById('text');
-        p.innerHTML = '';
-        var n = 0;
-        var str = 'Software engineer, Full-stack web Developer';
-        var typeTimer = setInterval(function() {
-        n = n + 1;
-        p.innerHTML = "" + str.slice(0, n);
-        if (n === str.length) {
-            clearInterval(typeTimer);
-            p.innerHTML = "" + str;
-            n = 0;
-            setInterval(function() {
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
 
-            if (n === 0) {
-                p.innerHTML = "" + str + "|"
-                n = 1;
-            } else {
-                p.innerHTML = "" + str
-                n = 0;
-            };
-            }, 500);
-        };
-        }, 60)
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
+      const id = anchor.getAttribute("href");
+      if (!id || id === "#") return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", id);
+    });
+  });
+
+  const setActive = () => {
+    if (!sections.length) return;
+    const offset = 80;
+    let current = sections[0];
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top - offset <= 0) {
+        current = section;
+      }
     }
+    navLinks.forEach((link) => {
+      const match = link.getAttribute("href") === `#${current.id}`;
+      link.classList.toggle("is-active", match);
+    });
+  };
+
+  window.addEventListener("scroll", setActive, { passive: true });
+  setActive();
 });
-
