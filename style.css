@@ -449,6 +449,11 @@ h1, h2, h3 {
   object-fit: contain;
 }
 
+.stack-icons img.icon-light {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
 .stack-bar {
   height: 3px;
   background: #2a2a2a;
